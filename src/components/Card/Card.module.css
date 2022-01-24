@@ -1,6 +1,18 @@
 .card {
     position: relative;
+    transform-origin: top;
+    animation: newgame 0.5s ease;
 }
+
+@keyframes newgame {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+
 .card img {
     width: 100%;
     display: block;

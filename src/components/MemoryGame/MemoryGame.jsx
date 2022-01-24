@@ -36,7 +36,7 @@ export default function MemoryGame() {
     }, []);
 
     useEffect(() => {
-        if (cards.every(el => el.matched)) {
+        if (cards.length > 0 && cards.every(el => el.matched === true)) {
             setTimeout(() => {
                 alert(`Congratulations! You completed the game with ${turns} turns.`);
                 newGame();
